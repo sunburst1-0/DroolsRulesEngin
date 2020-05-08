@@ -5,18 +5,18 @@ public class Condition {
 	private String roomName;
 	private String conditionType;
 	private int conditionLimit;
+	private int humidityConditionLimit;
 	private int nowValue;
-	private int value;
+//	private int value;
 	private String message;
 	
-	public int getValue() {
-		return value;
-	}
-
-	public void setValue(int value) {
-		this.value = value;
-	}
-
+//	public int getValue() {
+//		return value;
+//	}
+//
+//	public void setValue(int value) {
+//		this.value = value;
+//	}
 
 	
 	public int getNowValue() {
@@ -51,6 +51,16 @@ public class Condition {
 	public void setConditionLimit(int conditionLimit) {
 		this.conditionLimit = conditionLimit;
 	}
+	
+	
+
+	public int getHumidityConditionLimit() {
+		return humidityConditionLimit;
+	}
+
+	public void setHumidityConditionLimit(int humidityConditionLimit) {
+		this.humidityConditionLimit = humidityConditionLimit;
+	}
 
 	public String getMessage() {
 		return message;
@@ -61,5 +71,4 @@ public class Condition {
 	}
 
 	
-
 }
